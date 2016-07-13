@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public extension NSAttributedString {
-    internal class func make(_ string:String, block:((make:AttributesTransform) -> Void)) -> NSAttributedString {
+    internal class func make(string:String, block:((make:AttributesTransform) -> Void)) -> NSAttributedString {
         let transformer = AttributesTransform()
         block(make: transformer)
         

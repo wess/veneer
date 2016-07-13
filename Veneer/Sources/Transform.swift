@@ -122,7 +122,7 @@ public class AttributesTransform {
         return self
     }
     
-    private func setAttribute(_ attr: StringAttribute) {
+    private func setAttribute(attr: StringAttribute) {
         attributes.updateValue(attr.map.1, forKey: attr.map.0)
     }
 }
