@@ -46,7 +46,7 @@ public enum StringAttribute {
     case BaseLineOffset(CGFloat)
     case Obliqueness(CGFloat)
     case Expansion(CGFloat)
-    case WritingDirection([NSTextWritingDirection])
+    case WritingDirection([NSWritingDirectionFormatType])
     case Direction(TextDirection)
     
     public var map:(String, AnyObject) {

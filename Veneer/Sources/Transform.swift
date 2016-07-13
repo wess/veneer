@@ -112,7 +112,7 @@ public class AttributesTransform {
         return self
     }
     
-    public func WritingDirection(directions:[NSTextWritingDirection]) -> AttributesTransform {
+    public func WritingDirection(directions:[NSWritingDirectionFormatType]) -> AttributesTransform {
         setAttribute(.WritingDirection(directions))
         return self
     }

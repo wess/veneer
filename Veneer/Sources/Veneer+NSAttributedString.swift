@@ -17,7 +17,7 @@ public extension NSAttributedString {
         return NSAttributedString(string: string, attributes: transformer.attributes)
     }
     
-    public convenience init(_ string:String, block:((make:AttributesTransform) -> Void)) {
+    public convenience init(string:String, block:((make:AttributesTransform) -> Void)) {
         self.init(attributedString: NSAttributedString.make(string, block: block))
     }
 }

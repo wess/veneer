@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let attrString = NSAttributedString("Hello World") { make in
+        let attrString = NSAttributedString(string: "Hello World") { make in
             make.Font(UIFont.boldSystemFontOfSize(32.0))
             make.BackgroundColor(.redColor())
             make.Color(.whiteColor())
