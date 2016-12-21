@@ -10,14 +10,14 @@ import Foundation
 import UIKit
 
 public extension NSAttributedString {
-    internal class func make(string:String, block:((make:AttributesTransform) -> Void)) -> NSAttributedString {
+    internal class func make(_ string:String, block:((_ make:AttributesTransform) -> Void)) -> NSAttributedString {
         let transformer = AttributesTransform()
-        block(make: transformer)
+        block(transformer)
         
         return NSAttributedString(string: string, attributes: transformer.attributes)
     }
     
-    public convenience init(string:String, block:((make:AttributesTransform) -> Void)) {
+    public convenience init(string:String, block:((_ make:AttributesTransform) -> Void)) {
         self.init(attributedString: NSAttributedString.make(string, block: block))
     }
 }

@@ -16,9 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let attrString = NSAttributedString(string: "Hello World") { make in
-            make.Font(UIFont.boldSystemFontOfSize(32.0))
-            make.BackgroundColor(.redColor())
-            make.Color(.whiteColor())
+            make.font(UIFont.boldSystemFont(ofSize: 32.0))
+            make.backgroundColor(.red)
+            make.color(.white)
             
         }
 
