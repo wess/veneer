@@ -20,7 +20,7 @@ pod "Veneer"
 ```swift
  let attrString = NSAttributedString(string: "Hello World") { make in
                     make.font(UIFont.boldSystemFontOfSize(32.0))
-                    make.backgroundColor(.red
+                    make.backgroundColor(.red)
                     make.color(.white)
                   }
 
