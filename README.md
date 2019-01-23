@@ -18,13 +18,13 @@ pod "Veneer"
 ### Usage:
 ---
 ```swift
- let attrString = NSAttributedString(string: "Hello World") { make in
-                    make.font(UIFont.boldSystemFontOfSize(32.0))
-                    make.backgroundColor(.red
-                    make.color(.white)
-                  }
+let attrString = NSAttributedString(string: "Hello World") { make in
+  make.font(UIFont.boldSystemFontOfSize(32.0))
+  make.backgroundColor(.red)
+  make.color(.white)
+}
 
-  someLabel.attributedText = attrString
+someLabel.attributedText = attrString
 
 ```
 
